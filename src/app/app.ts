@@ -5,10 +5,10 @@ import { ProductList } from "./pages/products-list/product-list";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, ProductList],
+  imports: [Header, RouterOutlet],
   template: `
     <app-header />
-    <app-product-list />
+    <router-outlet />
   `,
   styles: [],
 })
